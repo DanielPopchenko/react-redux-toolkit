@@ -1,4 +1,7 @@
 @import './ui/colors';
+@import './components/RecipeItem.scss';
+@import './components/Header.scss';
+@import './components/CreateRecipeForm.scss';
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +9,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -19,28 +22,29 @@ body {
     -webkit-text-size-adjust: 100%;
     font-size: 18px;
     font-weight: 500;
+    color: getColor('text');
+}
+
+.section-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 button {
+    cursor: pointer;
+    color: #fff;
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background-color: getColor('background');
     cursor: pointer;
     transition: border-color 0.25s;
     &:hover {
-        border-color: #646cff;
+        border-color: getColor('buttonBorder');
     }
-    &:focus,
-     :focus-visible {
-        outline: 4px auto -webkit-focus-ring-color;
-    }
-}
-
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
 }

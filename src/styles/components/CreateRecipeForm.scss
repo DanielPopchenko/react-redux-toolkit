@@ -1,0 +1,25 @@
+@import '../ui/colors';
+.form {
+    display: flex;
+    flex-direction: column;
+    input {
+        padding: 13px 18px;
+        margin: 5px;
+        outline: none;
+        background-color: getColor('backgroundItem');
+        border: none;
+        color: getColor('text');
+        border-radius: 10px;
+        font-size: 18px;
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+    button {
+        background-color: getColor('backgroundItem');
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 10px 19px;
+    }
+}

@@ -1,2 +1,4 @@
-$colors: ( 'text': rgba(255, 255, 255, 0.87), 'background': #242424, 'buttonBorder': #646cff, );
-@function getColors($key) {}
+$colors: ( 'text': rgba(255, 255, 255, 0.87), 'background': #242424, 'buttonBorder': rgb(248, 86, 113), 'backgroundItem': rgb(78, 75, 75), 'bgButton': rgb(218, 166, 174), );
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

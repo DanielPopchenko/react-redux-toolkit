@@ -1,0 +1,25 @@
+@import '../ui/colors';
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    min-height: 120px;
+    background-color: getColor('backgroundItem');
+    border-radius: 10px;
+    width: 400px;
+    &+& {
+        margin-top: 19px;
+    }
+    button {
+        margin-top: 10px;
+        background-color: getColor('bgButton');
+    }
+    img {
+        width: 250px;
+        height: 210px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
