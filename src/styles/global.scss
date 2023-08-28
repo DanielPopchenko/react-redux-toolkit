@@ -48,3 +48,14 @@ button {
         border-color: getColor('buttonBorder');
     }
 }
+
+input {
+    padding: 13px 18px;
+    margin: 5px;
+    outline: none;
+    background-color: rgb(78, 75, 75);
+    border: none;
+    color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    font-size: 18px;
+}

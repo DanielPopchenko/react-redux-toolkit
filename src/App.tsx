@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import CreateRecipeForm from './components/form/CreateRecipeForm';
 import { Header } from './components/header/Header';
 import RecipeItem from './components/recipe-item/RecipeItem';
@@ -9,8 +10,16 @@ import { useGetRecipesQuery } from './store/api/api';
 const userId = 1;
 
 const App = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [queryTerm, setQueryTerm] = useState('');
   // ! skip: !userId - если авторизация слетела
-  const { data, isLoading } = useGetRecipesQuery(undefined, { skip: !userId });
+  const { data, isLoading } = useGetRecipesQuery(queryTerm);
+  // undefined, { skip: !userId };
+
+  const handleSearch = () => {
+    console.log('search');
+    setQueryTerm(searchTerm);
+  };
 
   return (
     <>
@@ -18,6 +27,20 @@ const App = () => {
 
       <section className="section-centered">
         <CreateRecipeForm />
+
+        <div style={{ padding: 10, textAlign: 'center', display: 'block' }}>
+          <p>Want to find something ?</p>
+          <input
+            type="search"
+            value={searchTerm}
+            placeholder="Name of the dish"
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+
+          <button type="button" onClick={() => handleSearch()}>
+            Search
+          </button>
+        </div>
 
         {/* <User /> */}
         <div>

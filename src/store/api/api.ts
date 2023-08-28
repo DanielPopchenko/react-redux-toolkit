@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { IRecipe } from '../../types/recipe.types';
 
 const URL = 'http://localhost:4200/recipes';
 
@@ -9,13 +10,14 @@ export const api = createApi({
     baseUrl: URL,
   }),
   endpoints: (builder) => ({
-    getRecipes: builder.query({
+    getRecipes: builder.query<IRecipe[], string>({
       // ! В базовом запросе мы указали, что нащи данные нужно сортировать по айди, тоесть 1 тот кто последний создался
-      query: () => '/?_sort=id&_order=desc',
+      query: (searchTerm) => `/?_sort=id&_order=desc&q=${searchTerm}`,
       // ! Привязали тег который будет привязан к текущему запросу
-      providesTags: () => [
+      providesTags: (result, error, serchTerm) => [
         {
           type: 'Recipe',
+          id: serchTerm,
         },
       ],
     }),

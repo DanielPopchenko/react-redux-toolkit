@@ -1,11 +1,16 @@
-// import React from 'react';
+import React from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { useActions } from '../../hooks/useActions';
 import { useFavorites } from '../../hooks/useFavorites';
 import { actions } from '../../store/favorites/favorites.slice';
+import { IRecipe } from '../../types/recipe.types';
 
-const RecipeItem = ({ recipe }) => {
+interface IRecipeItem {
+  recipe: IRecipe;
+}
+
+const RecipeItem = ({ recipe }: IRecipeItem) => {
   const { favorites } = useFavorites();
 
   // Так как мы создали новый кастомный хук, нам больше не нужно брать диспатч

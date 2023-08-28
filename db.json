@@ -1,33 +1,39 @@
 {
-    "recipes": [{
-            "id": 1,
-            "name": "Pizza Margaritta",
-            "image": "https://images.deliveryhero.io/image/fd-po/LH/dfiw-hero.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Pasta Carbonara",
-            "image": "https://www.thespruceeats.com/thmb/ovIQQQxQajADuIE2lqhgqq7ppyE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pasta-carbonara-recipe-5210168-hero-01-80090e56abc04ca19d88ebf7fad1d157.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Pumpkin Soup",
-            "image": "https://hellolittlehome.com/wp-content/uploads/2020/11/roasted-pumpkin-soup-2.jpg"
-        },
-        {
-            "name": "Pasta Tagliatelle",
-            "image": "https://www.sunglowkitchen.com/wp-content/uploads/2023/02/tagliatelle-pesto-pasta-1.jpg",
-            "id": 4
-        },
-        {
-            "name": "Red Sause Pasta",
-            "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/05/red-sauce-pasta-recipe.jpg",
-            "id": 5
-        },
-        {
-            "name": "Sushi",
-            "image": "https://cdn.tasteatlas.com/Images/Dishes/fde953e5aa504e8c83a84691582b0399.jpg?m=facebook",
-            "id": 6
-        }
-    ]
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Pizza Margaritta",
+      "image": "https://images.deliveryhero.io/image/fd-po/LH/dfiw-hero.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pasta Carbonara",
+      "image": "https://www.thespruceeats.com/thmb/ovIQQQxQajADuIE2lqhgqq7ppyE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pasta-carbonara-recipe-5210168-hero-01-80090e56abc04ca19d88ebf7fad1d157.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pumpkin Soup",
+      "image": "https://hellolittlehome.com/wp-content/uploads/2020/11/roasted-pumpkin-soup-2.jpg"
+    },
+    {
+      "name": "Pasta Tagliatelle",
+      "image": "https://www.sunglowkitchen.com/wp-content/uploads/2023/02/tagliatelle-pesto-pasta-1.jpg",
+      "id": 4
+    },
+    {
+      "name": "Red Sause Pasta",
+      "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/05/red-sauce-pasta-recipe.jpg",
+      "id": 5
+    },
+    {
+      "name": "Sushi",
+      "image": "https://cdn.tasteatlas.com/Images/Dishes/fde953e5aa504e8c83a84691582b0399.jpg?m=facebook",
+      "id": 6
+    },
+    {
+      "name": "Pumpkin Soup",
+      "image": "https://hellolittlehome.com/wp-content/uploads/2020/11/roasted-pumpkin-soup-2.jpg",
+      "id": 7
+    }
+  ]
 }
