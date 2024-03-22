@@ -1,9 +1,16 @@
 import React from 'react';
+import RecipeItem from './components/recipe-item/RecipeItem';
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <div>
+        <RecipeItem recipe={{ name: 'Lazania', id: '1' }} />
+        <RecipeItem recipe={{ name: 'Pasta', id: '2' }} />
+        <RecipeItem recipe={{ name: 'Pizza', id: '3' }} />
+      </div>
+    </div>
+  );
 };
-
-// 0934 384304-34 43482034 skdjfsldk fa =>
 
 export default App;
