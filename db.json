@@ -1,0 +1,39 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Lazania",
+      "image": "https://media.istockphoto.com/id/535851351/photo/lasagna-on-a-square-white-plate.jpg?s=612x612&w=0&k=20&c=Rg1K7z4NlWhy2qexaym_GJ0khcJFSJUJgToTN2cRspM="
+    },
+    {
+      "id": 2,
+      "name": "Pasta Carbonara",
+      "image": "https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-threeByTwoMediumAt2X-v2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pizza Margarita",
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2023/07/margherita-pizza-recipe.jpg"
+    },
+    {
+      "name": "Borsch",
+      "image": "https://www.177milkstreet.com/assets/site/Recipes/_large/Ukrainian-Borsch.jpg",
+      "id": 4
+    },
+    {
+      "name": "Vareniki",
+      "image": "https://milkandbun.files.wordpress.com/2014/04/vareniki-9.jpg",
+      "id": 5
+    },
+    {
+      "name": "Beef Wellington",
+      "image": "https://static01.nyt.com/images/2019/12/13/dining/mc-beef-wellington/mc-beef-wellington-superJumbo-v2.jpg",
+      "id": 6
+    },
+    {
+      "name": "Beef Wellington 2",
+      "image": "https://static01.nyt.com/images/2019/12/13/dining/mc-beef-wellington/mc-beef-wellington-superJumbo-v2.jpg",
+      "id": 7
+    }
+  ]
+}

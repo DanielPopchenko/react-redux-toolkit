@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: end;
+}
+
+.favQuantity {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  right: 33.8px;
+  top: 28px;
+}
