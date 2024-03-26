@@ -1,6 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { IRecipe } from '../../types/recipe.types';
 
-const initialState = [];
+const initialState: IRecipe[] = [];
 
 // ! here we are designing our reducers
 const favoutiesSlice = createSlice({
@@ -8,10 +9,9 @@ const favoutiesSlice = createSlice({
   initialState,
 
   reducers: {
-    toggleFavourites: (state, action) => {
+    toggleFavourites: (state, { payload: recipe }: PayloadAction<IRecipe>) => {
       // ! state is a global state
       // ! action.payload is what we pass to the function
-      const recipe = action.payload;
 
       // ? here we are checking if we have the recipe in a our state
       const doesExist = state.some((r) => r.id === recipe.id);

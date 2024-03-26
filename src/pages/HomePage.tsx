@@ -3,6 +3,7 @@ import { useGetRecipesQuery } from '../store/api/api';
 import RecipeItem from '../components/recipe-item/RecipeItem';
 import Header from '../components/header/Header';
 import CreateRecipe from '../components/create-recipe/CreateRecipe';
+import { IRecipe } from '../types/recipe.types';
 
 // ! IMAGINE if we had a user(1) and when it`s logged in, we show data, when it not (null) we don`t show
 const userId = 1;
@@ -32,7 +33,7 @@ const HomePage = () => {
               <p>Loading...</p>
             ) : data ? (
               <>
-                {data.map((recipe) => (
+                {data.map((recipe: IRecipe) => (
                   <RecipeItem key={recipe.id} recipe={recipe} />
                 ))}
               </>

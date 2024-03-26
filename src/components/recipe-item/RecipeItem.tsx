@@ -3,8 +3,13 @@ import styles from './RecipeItem.module.css';
 import { useSelector } from 'react-redux';
 import { useActions } from '../../hooks/useActions';
 import { useFavorites } from '../../hooks/useFavorites';
+import { IRecipe } from '../../types/recipe.types';
 
-const RecipeItem = ({ recipe }) => {
+interface IRecipeItem {
+  recipe: IRecipe;
+}
+
+const RecipeItem = ({ recipe }: IRecipeItem) => {
   const favorites = useFavorites();
   const { toggleFavourites } = useActions();
 
